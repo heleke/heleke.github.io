@@ -18,25 +18,55 @@
             
             <nav>
                 <ul>
-                    <li><a href="home.html">home</a></li>
-                    <li><a class="active" href="choices-matter.html">choices matter</a></li>
-                    <li><a href="online.html">online</a></li>
-                    <li><a href="console.html">console</a></li>
-                    <li><a href="vr.html">virtual reality</a></li>
+                    <!-- home -->
+
+                          <li><a href="index.html">home</a></li>
+
+                    <!-- choices matter -->
+
+                          <li><a class="active" href="choices-matter.html">choices matter</a></li>
+
+                    <!-- online -->
+
+                     <div class="dropdown">
+                         <li><a href="online.html">online</a></li>
+                       <div class="dropdown-content">
+                         <p>online games are games you play online but sometimes online games do recquire you to download something</p>
+                       </div>
+                     </div>
+
+
+                    <!-- console -->
+
+                     <div class="dropdown">
+                          <li><a href="console.html">console</a></li>
+                       <div class="dropdown-content">
+                         <p>console games are games you play on a console like a Playstation or Xbox</p>
+                       </div>
+                     </div>
+
+                    <!-- virtual reality -->
+
+                     <div class="dropdown">
+                          <li><a href="vr.html">virtual reality</a></li>
+                       <div class="dropdown-content">
+                         <p>virtual reality games are games you play with a virtual reality headset and make it look like the things  you see are really there</p>
+                     </div>
+                     
                 </ul>
             </nav>
             
             <article>
 
-            <p>Choices matter games are games where your choices matter, so there are certain scenes where you'll be having a conversation, for example, and you'll get a few options for what to say. What you decide to say can change the stoyline of the game, but that can mean different things in some situations it means your relationship with others will change but sometimes it means your whole gameplay will change or it can be both!</p>
+         <!-- content -->
            
             <div id="content"><h3 > content </h3>
-            <ol>
-             <li><a href="#nummer1">number 1: Life is strange</a></li>
-             <li><a href="#nummer2">number 2: Detroit become human</a></li>
-             <li><a href="#nummer3">number 3: The Walking Dead</a></li>
-             <li><a href="#nummer4">number 4: Until Dawn</a></li>
-            </ol>
+             <ol>
+              <li><a href="#nummer1">number 1: Life is strange</a></li>
+              <li><a href="#nummer2">number 2: Detroit become human</a></li>
+              <li><a href="#nummer3">number 3: The Walking Dead</a></li>
+              <li><a href="#nummer4">number 4: Until Dawn</a></li>
+             </ol>
             </div> 
 
          <!-- nummer 1 -->
@@ -48,61 +78,12 @@
          <!-- nummer 2 -->
 
             <div class="tussentitel"><h2 id="nummer2">#2 Detroit become human </h2>
-                <p>
-                  <!-- slideshow -->
-
-                  <div class="slideshow-container">
-
-                
-                   <div class="mySlides fade">
-                      <img src="afbeeldingen/detroit-become-human.jpg" class="zweefRechts" >
-                   </div>
-
-                   <div class="mySlides fade">
-                      <img src="afbeeldingen/detroit.jpg" class="zweefRechts">
-                   </div>
-
-                   <div class="mySlides fade">
-                     <img src="afbeeldingen/connor.jpg" class="zweefRechts">
-                   </div>
-
-                   <!-- Next and previous buttons -->
-                   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                   <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                   </div>
-                   <br>
-                     Another really cool and interesting game is Detroit beome human. This game involves so calles Androids, robot like tingd made by a company to accomplish different tasks like, for example. cleaning and doing the laundry. In this game there are three different story lines, where you play as an Android. The game contains a lot of conflict and has a lot of unexpected turns, it portrays different life threatening situations in which you have to make the rigt decisions in order to survive. Your choices also chance the way different characters in this game think about you, so you'll have to improve your relationships with others by making certain choices.</p>
-          
-            <script>
-                   var slideIndex = 1;
-                   showSlides(slideIndex);
-
-                   function plusSlides(n) {
-                  showSlides(slideIndex += n);
-                  }
-
-                   function currentSlide(n) {
-                   showSlides(slideIndex = n);
-                  }
-
-                   function showSlides(n) {
-                   var i;
-                   var slides = document.getElementsByClassName("mySlides");
-                   var dots = document.getElementsByClassName("dot");
-                   if (n > slides.length) {slideIndex = 1}    
-                   if (n < 1) {slideIndex = slides.length}
-                   for (i = 0; i < slides.length; i++) {
-                   slides[i].style.display = "none";  
-                  }
-                   for (i = 0; i < dots.length; i++) {
-                   dots[i].className = dots[i].className.replace(" active", "");
-                  }
-                   slides[slideIndex-1].style.display = "block";  
-                   dots[slideIndex-1].className += " active";
-                  }
-            </script>
-
-
+            <div class="box">
+             <img src="afbeeldingen/detroit-become-human.jpg" class="zweefRechts">
+             <div class="detroit">Connor</div>
+            </div>
+            <p>Another really cool and interesting game is Detroit beome human. This game involves so calles Androids, robot like tingd made by a company to accomplish different tasks like, for example. cleaning and doing the laundry. In this game there are three different story lines, where you play as an Android. The game contains a lot of conflict and has a lot of unexpected turns, it portrays different life threatening situations in which you have to make the rigt decisions in order to survive. Your choices also chance the way different characters in this game think about you, so you'll have to improve your relationships with others by making certain choices.</p>
+            </div>
 
          <!-- nummer 3 -->
 
@@ -111,11 +92,10 @@
             </div>
 
          <!-- nummer 4 -->
+
             <div class="tussentitel"><h2 id="nummer4"> #4 Until Dawn </h2>
                 <p><img class="zweefRechts" src="afbeeldingen/untildawn.png">Until Dawn is a horror game </p>
             </div>
-
-            
 
             </article>
 
