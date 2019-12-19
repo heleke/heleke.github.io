@@ -153,29 +153,16 @@ img.zweefRechts {
     margin-left:15px;
     width: 40%;
     border: inset rgb(46,46,46);
-    display: block;
-    width: 100%;
-    height: auto;
 }
 
-.box {
-  position: relative;
-  width: 40%;
+.zoom {
+  transition: transform .2s;
+  margin: 0 auto;
+  
 }
 
-.detroit {
-  bottom: 0; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1; 
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-}
-
-.box:hover .detroit{
-    opacity: 1;
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
 }
